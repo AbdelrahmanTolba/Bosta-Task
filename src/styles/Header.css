@@ -2,7 +2,7 @@
 
 .header {
   font-family: "Poppins", sans-serif;
-  /* margin-top: 20rem; */
+  margin-top: 10rem;
   padding-left: 8rem;
   background-image: linear-gradient(
     to bottom,
@@ -107,6 +107,7 @@
 }
 
 @media only screen and (max-width: 36.9375em) {
+  /* 591px */
   .header {
     padding-left: 0;
     padding: 1rem;

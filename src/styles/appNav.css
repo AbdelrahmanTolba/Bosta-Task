@@ -35,6 +35,8 @@ nav {
   transition: all 0.2s;
   opacity: 0;
   visibility: hidden;
+  background-color: #fff;
+  padding: 1rem 0;
 }
 .option:hover ul {
   visibility: visible;
@@ -47,6 +49,8 @@ nav {
   cursor: pointer;
   text-align: start;
   transition: all 0.2s;
+  padding: 1rem;
+  border-radius: 5px;
 }
 .option ul li:hover {
   background-color: #d8dbde;

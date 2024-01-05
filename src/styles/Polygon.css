@@ -1,0 +1,82 @@
+.track__form {
+  position: relative;
+}
+
+.track1 {
+  position: relative;
+  top: -193px;
+  left: -46px;
+}
+
+.white__cloud {
+  position: relative;
+  top: -215px;
+  left: -188px;
+}
+
+.blue__cloud {
+  position: relative;
+  top: -306px;
+  left: -338px;
+}
+
+.track__gif {
+  position: relative;
+  top: -278px;
+  left: -45px;
+}
+@media (max-width: 75em) {
+  .track__gif {
+    top: -198px;
+    left: -850px;
+  }
+}
+@media only screen and (max-width: 36.9375em) {
+  /*591px */
+  .track__form > svg:nth-child(1) {
+    width: 25rem;
+    height: 15rem;
+    top: -313px;
+    left: 0;
+  }
+
+  .track__form > svg:nth-child(2) {
+    width: 94px;
+    height: 130px;
+    position: relative;
+    top: -539px;
+    left: -186px;
+  }
+
+  .track__form > svg:nth-child(3) {
+    width: 99px;
+    height: 120px;
+    top: -354px;
+    left: -125px;
+  }
+
+  .track__form > svg:nth-child(4) {
+    width: 466px;
+    height: 90px;
+    position: relative;
+    top: -499px;
+    left: 19px;
+    z-index: 10;
+  }
+
+  .track--with-line {
+    position: relative;
+    top: -193px;
+    left: -46px;
+  }
+
+  .paylogn-blue {
+    position: relative;
+    top: -296px;
+    left: 83px;
+  }
+
+  /* .track__gif {
+    display: none;
+  } */
+}

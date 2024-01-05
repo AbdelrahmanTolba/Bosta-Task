@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;900;1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,800;1,900&display=swap");
+
+.header {
+  font-family: "Poppins", sans-serif;
+  /* margin-top: 20rem; */
+  padding-left: 8rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(252, 254, 254),
+    rgb(246, 253, 253),
+    rgb(238, 251, 251)
+  );
+  gap: 1rem;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.header__heading {
+  font-weight: 700;
+  width: 392px;
+  line-height: 1.3;
+  font-size: 52px;
+  margin-bottom: 35px;
+  color: #111619;
+}
+
+.header__paragraph {
+  color: #667085;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.header__btn {
+  color: #fff;
+  background-color: var(--color-primary);
+  border: none;
+  padding: 11px;
+  margin-top: 31px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.header__img {
+  width: 750px;
+  padding-top: 30rem;
+  overflow: hidden;
+}
+
+.wrap__images {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 41px;
+  top: 56px;
+}
+@media (max-width: 75em) {
+  .header {
+    flex-wrap: wrap;
+    height: 150vh;
+  }
+  .header__img {
+    width: 100%;
+    padding-top: 0;
+  }
+  .wrap__images {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 0;
+    top: 56px;
+  }
+}
+
+.tracks__form {
+  position: relative;
+  top: -418px;
+  left: 32px;
+}
+
+.man__photo {
+  clip-path: polygon(
+    46% 0,
+    48% 0,
+    73% 26%,
+    73% 75%,
+    49% 100%,
+    47% 100%,
+    20% 76%,
+    20% 29%
+  );
+  position: relative;
+  left: 41px;
+}
+
+@media only screen and (max-width: 36.9375em) {
+  .header {
+    padding-left: 0;
+    padding: 1rem;
+    height: 100vh;
+  }
+  .header__text {
+    align-items: center;
+    justify-content: center;
+  }
+  .header__heading {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .header__paragraph {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+  }
+
+  .header__img {
+    align-self: flex-end;
+  }
+  .man__photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+  }
+
+  .tracks__form {
+    position: relative;
+    top: 142px;
+    left: -67px;
+  }
+}

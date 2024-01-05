@@ -1,4 +1,5 @@
 import AppNav from "../components/AppNav";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Partner from "../components/Partner";
 import Services from "../components/Services";
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <Success />
       <Partner />
+      <Footer />
     </div>
   );
 }

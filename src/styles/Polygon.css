@@ -5,30 +5,30 @@
 .track1 {
   position: relative;
   top: -193px;
-  left: -46px;
+  inset-inline-start: -30px;
 }
 
 .white__cloud {
   position: relative;
   top: -215px;
-  left: -188px;
+  inset-inline-start: -188px;
 }
 
 .blue__cloud {
   position: relative;
   top: -306px;
-  left: -338px;
+  inset-inline-start: -338px;
 }
 
 .track__gif {
   position: relative;
   top: -278px;
-  left: -45px;
+  inset-inline-start: -30px;
 }
 @media (max-width: 75em) {
   .track__gif {
     top: -198px;
-    left: -850px;
+    inset-inline-start: -850px;
   }
 }
 @media only screen and (max-width: 36.9375em) {
@@ -37,7 +37,7 @@
     width: 25rem;
     height: 15rem;
     top: -313px;
-    left: 0;
+    inset-inline-start: 0;
   }
 
   .track__form > svg:nth-child(2) {
@@ -45,14 +45,14 @@
     height: 130px;
     position: relative;
     top: -539px;
-    left: -186px;
+    inset-inline-start: -186px;
   }
 
   .track__form > svg:nth-child(3) {
     width: 99px;
     height: 120px;
     top: -354px;
-    left: -125px;
+    inset-inline-start: -125px;
   }
 
   .track__form > svg:nth-child(4) {
@@ -60,20 +60,20 @@
     height: 90px;
     position: relative;
     top: -499px;
-    left: 19px;
+    inset-inline-start: 19px;
     z-index: 10;
   }
 
   .track--with-line {
     position: relative;
     top: -193px;
-    left: -46px;
+    inset-inline-start: -46px;
   }
 
   .paylogn-blue {
     position: relative;
     top: -296px;
-    left: 83px;
+    inset-inline-start: 83px;
   }
 
   /* .track__gif {

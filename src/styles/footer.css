@@ -47,6 +47,10 @@
   display: flex;
   gap: 100px;
 }
+.footer .logo a svg {
+  width: auto;
+  height: auto;
+}
 
 @media only screen and (max-width: 50em) {
   /* 800px */

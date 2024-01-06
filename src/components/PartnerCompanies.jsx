@@ -5,7 +5,6 @@ export default function PartnerCompanies() {
         Trusted by top companies in the region
       </h2>
       <div className="trusted__partners">
-        {/* Amazon */}
         <div className="partner__logo">
           {/* Amazon */}
           <svg

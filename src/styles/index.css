@@ -19,6 +19,10 @@
 html {
   font-size: 62.5%;
 }
+::selection {
+  background-color: #0098a5;
+  color: #fff;
+}
 @media (max-width: 75em) {
   html {
     font-size: 56.25%;
@@ -56,4 +60,23 @@ button {
 
 *:disabled {
   cursor: not-allowed;
+}
+
+.text__green {
+  color: #3ac435 !important;
+}
+.text__red {
+  color: var(--color-primary) !important;
+}
+.text__yellow {
+  color: #f9ba2b !important;
+}
+.bg__green {
+  background-color: #3ac435 !important;
+}
+.bg__red {
+  background-color: var(--color-primary) !important;
+}
+.bg__yellow {
+  background-color: #f9ba2b !important;
 }

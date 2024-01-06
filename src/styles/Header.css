@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 41px;
+  inset-inline-start: 41px;
   top: 56px;
 }
 @media (max-width: 75em) {
@@ -80,7 +80,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 0;
+    inset-inline-end: 0;
     top: 56px;
   }
 }
@@ -88,7 +88,7 @@
 .tracks__form {
   position: relative;
   top: -418px;
-  left: 32px;
+  inset-inline-start: 32px;
 }
 
 .man__photo {
@@ -103,7 +103,7 @@
     20% 29%
   );
   position: relative;
-  left: 41px;
+  inset-inline-start: 41px;
 }
 
 @media only screen and (max-width: 36.9375em) {
@@ -145,6 +145,6 @@
   .tracks__form {
     position: relative;
     top: 142px;
-    left: -67px;
+    inset-inline-start: -67px;
   }
 }

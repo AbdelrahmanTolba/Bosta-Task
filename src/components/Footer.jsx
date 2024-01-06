@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/footer.css";
 import Logo from "./Logo";
 export default function Footer() {
@@ -72,9 +73,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <a href="" className="link__track">
+      <Link to={"/"} className="link__track">
         Track Shipment
-      </a>
+      </Link>
     </div>
   );
 }

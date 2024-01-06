@@ -49,20 +49,14 @@ export default function Menu() {
               <span className="nav__link"> {t("middleNav.pricing")}</span>
             </li>
             <li className="menu__option option">
-              <span href="" className="nav__link">
-                {t("middleNav.blog")}
-              </span>
+              <span className="nav__link">{t("middleNav.blog")}</span>
             </li>
             <li className="menu__option option" onClick={handleLang}>
-              {i18n.language === "ar" && (
-                <span href="" className="nav__link">
-                  العربية
-                </span>
-              )}
               {i18n.language === "en" && (
-                <span href="" className="nav__link">
-                  Engilsh
-                </span>
+                <span className="nav__link">العربية</span>
+              )}
+              {i18n.language === "ar" && (
+                <span className="nav__link">Engilsh</span>
               )}
             </li>
           </ul>

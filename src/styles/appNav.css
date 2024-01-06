@@ -296,10 +296,11 @@ nav {
 }
 
 .menu {
+  height: 100vh;
   position: absolute;
   width: 100%;
   background-color: #fff;
-  top: 9rem;
+  top: 8rem;
   inset-inline-start: 0;
   z-index: 1000;
   display: flex;

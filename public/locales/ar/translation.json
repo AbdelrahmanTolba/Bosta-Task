@@ -1,0 +1,58 @@
+{
+  "products": "منتجات",
+  "integrations": "التكاملات",
+  "useCases": "نوع البزنس",
+  "businesses": "شركات كبيرة",
+  "SMEs": "شركات متوسطة او كبيرة",
+  "Shopify": "شوبيفاي",
+  "WooCommerce": "ووكومرس",
+  "CustomAPIs": "الربط عن طريق Apis",
+  "Solution": "الحلول",
+  "MobileApp": "تطبيق المحمول ",
+  "dashboard": "لوحة التحكم",
+
+  "middleNav": {
+    "blog": "المدونة",
+    "pricing": "التسعير",
+    "callSales": "كلم المبيعات",
+    "Main": "الرئيسية"
+  },
+  "trackShipment": {
+    "header": "تتبع شحنتك",
+    "placeHolder": "رقم الشحنة"
+  },
+  "table": {
+    "Branch": "الفرع",
+    "Date": "التاريخ",
+    "Time": "الوقت",
+    "Details": "تفاصيل"
+  },
+  "signin": "تسجيل الدخول",
+  "signup": "اشترك",
+  "Deliveryaddress": "عنوان التسليم",
+  "Shipmentdetails": "تفاصيل الشحنة",
+  "isProblem": "هل يوجد مشكلة في شحنتك ؟!",
+  "ReportProblem": "إبلاغ عن مشكلة",
+
+  "DELIVERED": "تم تسليم الشحنة",
+  "CANCELLED": "تم إلغاء الشحنة",
+  "DELIVERED_TO_SENDER": "لم يتم تسليم الشحنة",
+  "TICKET_CREATED": "تم إنشاء التذكرة",
+  "PACKAGE_RECEIVED": "تم استلام الطرد",
+  "IN_TRANSIT": "في مرحلة انتقالية",
+  "NOT_YET_SHIPPED": "لم يتم شحنه بعد",
+  "WAITING_FOR_CUSTOMER_ACTION": "في انتظار إجراء العملاء",
+  "OUT_FOR_DELIVERY": "خارج للتوصيل",
+  "Shipment_Num": "رقم الشحنة",
+  "Last_updated": "اخر تحديث",
+  "Merchant_name": "اسم التاجر",
+  "Delivery_time_within": "موعد التسليم خلال",
+  "22 Wednesday 2020": "22 الاربعاء 2020",
+  "Saturday, July 25 2020, 2:25 pm": "السبت, يوليو  2020, 2:25 م",
+  "Wednesday, March 29 2023, 4:07 pm": "الاربعاء, مارس 29 2023, 4:07 م",
+  "Tuesday, April 4 2023, 3:52 pm": "الثلاثاء, ابريل 4 2023, 3:52 م",
+  "1 Saturday 2023": "1 السبت 2023",
+
+  "Bosta": "بوسطة",
+  "SOUQ.COM": "سوق"
+}

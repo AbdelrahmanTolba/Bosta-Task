@@ -1,0 +1,60 @@
+{
+  "products": "Products",
+  "integrations": "Integrations",
+  "useCases": "Use Cases",
+  "businesses": "Businesses",
+  "SMEs": "SMEs",
+  "Shopify": "Shopify",
+  "WooCommerce": "WooCommerce",
+  "CustomAPIs": "Custom APIs",
+  "Solution": "Solution",
+  "MobileApp": "Mobile App",
+  "dashboard": "Dashboard",
+  "middleNav": {
+    "callSales": "Call Sales",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "Main": "Main"
+  },
+  "trackShipment": {
+    "header": "Track Shipment",
+    "p": "Track your shipment",
+    "placeHolder": "Tracking No."
+  },
+  "signin": "Sign In",
+  "signup": "Sign Up",
+
+  "table": {
+    "Branch": "Branch",
+    "Date": "Date",
+    "Time": "Time",
+    "Details": "Details"
+  },
+
+  "Deliveryaddress": "Delivery address",
+  "Shipmentdetails": "Shipment details",
+  "isProblem": "Is there a problem with your shipment?!",
+  "ReportProblem": "Report a problem",
+
+  "DELIVERED": "DELIVERED",
+  "CANCELLED": "CANCELLED",
+  "DELIVERED_TO_SENDER": "DELIVERED TO SENDER",
+  "TICKET_CREATED": "TICKET CREATED",
+  "PACKAGE_RECEIVED": "PACKAGE RECEIVED",
+  "IN_TRANSIT": "IN TRANSIT",
+  "NOT_YET_SHIPPED": "NOT YET SHIPPED",
+  "WAITING_FOR_CUSTOMER_ACTION": "WAITING FOR CUSTOMER ACTION",
+  "OUT_FOR_DELIVERY": "OUT FOR DELIVERY",
+  "Shipment_Num": "Shipment Num",
+  "Last_updated": "Last updated",
+  "Merchant_name": "Merchant_name",
+  "Delivery_time_within": "Delivery time within",
+  "22 Wednesday 2020": "22 Wednesday 2020",
+  "Saturday, July 25 2020, 2:25 pm": "Saturday, July 25 2020, 2:25 pm",
+  "Wednesday, March 29 2023, 4:07 pm": "Wednesday, March 29 2023, 4:07 pm",
+  "Tuesday, April 4 2023, 3:52 pm": "Tuesday, April 4 2023, 3:52 pm",
+  "1 Saturday 2023": "1 Saturday 2023",
+
+  "Bosta": "Bosta",
+  "SOUQ.COM": "SOUQ.COM"
+}

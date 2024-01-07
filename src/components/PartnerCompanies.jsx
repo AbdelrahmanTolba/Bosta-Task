@@ -1,9 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 export default function PartnerCompanies() {
+  const { t } = useTranslation();
   return (
     <div className="trusted__companies">
-      <h2 className="trusted__heading">
-        Trusted by top companies in the region
-      </h2>
+      <h2 className="trusted__heading">{t("partner.trusted__heading")}</h2>
       <div className="trusted__partners">
         <div className="partner__logo">
           {/* Amazon */}

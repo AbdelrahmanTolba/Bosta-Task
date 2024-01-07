@@ -1,11 +1,13 @@
+import { useTranslation } from "react-i18next";
 import services from "../assets/services.png";
 import "../styles/services.css";
 
 export default function Services() {
+  const { t } = useTranslation();
   return (
     <section className="services">
-      <h1 className="services__heading">
-        Empowering businesses with our services and solutions
+      <h1 className="section__heading services__heading">
+        {t("services.heading")}
       </h1>
       <div className="services__grid">
         <div className="services__left">
@@ -38,11 +40,11 @@ export default function Services() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <h3 className="heading--3">Overnight delivery</h3>
+              <h3 className="heading--3">
+                {t("services.Overnight_delivery.heading")}
+              </h3>
               <p className="services__item--paragraph">
-                Get orders delivered on the very next day! Guaranteed with a
-                success rate of 96%, one of the highest rates in the region’s
-                logistics market.
+                {t("services.Overnight_delivery.paragraph")}
               </p>
             </div>
 
@@ -91,10 +93,9 @@ export default function Services() {
                   style={{ color: "#fff" }}
                 />
               </svg>
-              <h3 className="heading--3">Next-day cash collection</h3>
+              <h3 className="heading--3">{t("services.Next_day.heading")}</h3>
               <p className="services__item--paragraph">
-                Empower your business’s cash cycle with Egypt's fastest cash
-                collection service. Only in 24 hours.
+                {t("services.Next_day.paragraph")}
               </p>
             </div>
 
@@ -127,11 +128,11 @@ export default function Services() {
                   style={{ color: "#fff" }}
                 />
               </svg>
-              <h3 className="heading--3">Premium fulfillment service</h3>
+              <h3 className="heading--3">
+                {t("services.Premium_fulfillment.heading")}
+              </h3>
               <p className="services__item--paragraph">
-                Store, sell, ship! It takes only 3 steps with Bosta’s
-                fulfillment solution to reach your customers and boost your
-                sales.
+                {t("services.Premium_fulfillment.paragraph")}
               </p>
             </div>
           </div>
@@ -179,10 +180,11 @@ export default function Services() {
                   style={{ color: "#fff" }}
                 />
               </svg>
-              <h3 className="heading--3">Full financial visibility</h3>
+              <h3 className="heading--3">
+                {t("services.Full_financial.heading")}
+              </h3>
               <p className="services__item--paragraph">
-                Have live updates day by day about your financials through
-                Bosta’s Wallet available in our dashboard.
+                {t("services.Full_financial.paragraph")}
               </p>
             </div>
 
@@ -216,10 +218,11 @@ export default function Services() {
                   style={{ color: "#fff" }}
                 />
               </svg>
-              <h3 className="heading--3">Shipping all over Egypt</h3>
+              <h3 className="heading--3">
+                {t("services.Shipping_Egypt.heading")}
+              </h3>
               <p className="services__item--paragraph">
-                Bosta offers a full coverage delivery experience with +20
-                distribution centers all over Egypt and counting.
+                {t("services.Shipping_Egypt.paragraph")}
               </p>
             </div>
 
@@ -248,10 +251,11 @@ export default function Services() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <h3 className="heading--3">Worldwide Shipping</h3>
+              <h3 className="heading--3">
+                {t("services.Worldwide_Shipping.heading")}
+              </h3>
               <p className="services__item--paragraph">
-                Import all your materials and goods from anywhere in the world
-                and receive them at your doorstep in Egypt with Bosta Box.
+                {t("services.Worldwide_Shipping.paragraph")}
               </p>
             </div>
           </div>

@@ -31,6 +31,74 @@
     "Details": "Details"
   },
 
+  "header": {
+    "heading": "Join A New Generation Of Logistics!",
+    "paragraph": "Redefining how you ship, track, collect, deliver all through innovative tech-solutions and efficient operations.",
+    "btn": "Start now"
+  },
+  "services": {
+    "heading": "Empowering businesses with our services and solutions",
+    "Overnight_delivery": {
+      "heading": "Overnight delivery",
+      "paragraph": "Get orders delivered on the very next day! Guaranteed with a success rate of 96%, one of the highest rates in the region’s logistics market."
+    },
+    "Next_day": {
+      "heading": "Next-day cash collection",
+      "paragraph": "Empower your business’s cash cycle with Egypt's fastest cash collection service. Only in 24 hours."
+    },
+    "Premium_fulfillment": {
+      "heading": "Premium fulfillment service",
+      "paragraph": "Store, sell, ship! It takes only 3 steps with Bosta’s fulfillment solution to reach your customers and boost your sales."
+    },
+    "Full_financial": {
+      "heading": "Full financial visibility",
+      "paragraph": "Have live updates day by day about your financials through Bosta’s Wallet available in our dashboard."
+    },
+    "Shipping_Egypt": {
+      "heading": "Shipping all over Egypt",
+      "paragraph": "Bosta offers a full coverage delivery experience with +20 distribution centers all over Egypt and counting."
+    },
+    "Worldwide_Shipping": {
+      "heading": "Worldwide Shipping",
+      "paragraph": "Import all your materials and goods from anywhere in the world and receive them at your doorstep in Egypt with Bosta Box."
+    }
+  },
+
+  "success": {
+    "heading": "Get to know our success but in numbers",
+    "price__heading": "Flexible prices for everyone",
+    "price__paragraph": "We customize your pricing plan based on your needs. Tailor your own with our sales team and we guarantee a sky-rocketing shipping experience and sales rates.",
+    "btn": "Learn more",
+
+    "Merchants": "Merchants",
+    "Hubs": "Hubs",
+    "Successfull": "Successfull",
+    "parcels": "parcels",
+    "Stars": "Stars"
+  },
+  "partner": {
+    "heading": "Egypt’s #1 Shipping Partner Fo",
+    "Business__heading": "Business",
+    "Business__paragraph": "Bosta can equip your logistic operations with efficient tools and innovative tech solutions — dashboard, plugins, and API integrations.",
+    "Small__Business__heading": "Small & Medium Business",
+    "Small__Business__paragraph": "We ensure seamless delivery operations for your small or mid-sized hustle with our super-smooth mobile app.",
+    "btn": "Start with Bosta",
+
+    "trusted__heading": "Trusted by top companies in the region",
+
+    "Sign__heading": "Sign Up & Start Shipping Today",
+    "Sign__btn": "Start Shipping"
+  },
+
+  "footer": {
+    "Company": "Company",
+    "About_us": "About us",
+    "Careers": "Careers",
+    "Pricing": "Pricing",
+    "FAQ": "FAQ",
+    "Track_Shipment": "Track Shipment"
+  },
+
   "Deliveryaddress": "Delivery address",
   "Shipmentdetails": "Shipment details",
   "isProblem": "Is there a problem with your shipment?!",

@@ -1,5 +1,4 @@
 import "../styles/trackShipment.css";
-import { Suspense } from "react";
 
 import { useEffect, useState } from "react";
 import { fetchTrackingData } from "../api/apiTrackShipment";
@@ -42,10 +41,4 @@ function TrackingShipment() {
     )
   );
 }
-export default function WrappedApp() {
-  return (
-    <Suspense fallback="...loading">
-      <TrackingShipment />
-    </Suspense>
-  );
-}
+export default TrackingShipment;

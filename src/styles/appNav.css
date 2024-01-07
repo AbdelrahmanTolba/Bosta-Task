@@ -98,7 +98,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin-right: 1rem;
+  margin-inline-end: 1rem;
   background: none;
   border: none;
   outline: none;
@@ -271,7 +271,56 @@ nav {
     background: var(--color-primary);
   }
 }
-@media (max-width: 28.125em) {
+
+.menu {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 9rem;
+  inset-inline-start: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+.menu__option {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 2.3rem 0;
+  border-bottom: 1px dashed var(--color-gray);
+  cursor: pointer;
+
+  font-size: 2rem;
+}
+.menu__option:last-child {
+  border-bottom: 1px solid var(--color-gray);
+}
+.menu__option ul {
+  width: 100%;
+  background-color: #fff;
+  z-index: 1100;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1019607);
+  padding: 2rem;
+}
+
+.btn {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.btn.nav__link {
+  border: 1px solid var(--color-gray-dark);
+}
+@media (max-width: 36.9375em) {
+  .menu {
+    top: 8rem;
+  }
   nav .mobile-right-side {
     display: flex;
     justify-content: space-between;
@@ -294,50 +343,4 @@ nav {
     width: 2rem;
     height: 2rem;
   }
-}
-
-.menu {
-  height: 100vh;
-  position: absolute;
-  width: 100%;
-  background-color: #fff;
-  top: 8rem;
-  inset-inline-start: 0;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  padding: 0 3rem;
-}
-.menu__option {
-  display: flex;
-  justify-content: space-between;
-  font-size: 2rem;
-  padding: 23px 0;
-  border-bottom: 1px dashed var(--color-gray);
-  cursor: pointer;
-
-  font-size: 2rem;
-}
-.menu__option:last-child {
-  border-bottom: 1px solid var(--color-gray);
-}
-.menu__option ul {
-  width: 100%;
-  background-color: #fff;
-  z-index: 1100;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1019607);
-  padding: 2rem;
-}
-
-.btn {
-  width: 80%;
-  margin: 24px auto;
-  padding: 13px 32px;
-  border-radius: 50px;
-  font-size: 2rem;
-  text-align: center;
-  cursor: pointer;
-}
-.btn.nav__link {
-  border: 1px solid var(--color-gray-dark);
 }

@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 export default function BluePath() {
+  const { t } = useTranslation();
+
   return (
     <div className="success__paths">
       <div className="success__items">
@@ -14,7 +18,7 @@ export default function BluePath() {
           </svg>
           <figcaption className="success__item--text">
             <span>15,000</span>
-            <span>Merchants</span>
+            <span>{t("success.Merchants")}</span>
           </figcaption>
         </figure>
         <figure className="success__item">
@@ -29,7 +33,7 @@ export default function BluePath() {
           </svg>
           <figcaption className="success__item--text">
             <span>+25</span>
-            <span>Hubs</span>
+            <span>{t("success.Hubs")}</span>
           </figcaption>
         </figure>
       </div>
@@ -48,8 +52,8 @@ export default function BluePath() {
           <figcaption className="success__item--text">
             <span>10,000,000</span>
             <span>
-              Successfull
-              <br /> parcels
+              {t("success.Successfull")}
+              <br /> {t("success.parcels")}
             </span>
           </figcaption>
         </figure>
@@ -65,7 +69,7 @@ export default function BluePath() {
           </svg>
           <figcaption className="success__item--text">
             <span>1,000</span>
-            <span>Stars</span>
+            <span>{t("success.Stars")}</span>
           </figcaption>
         </figure>
       </div>

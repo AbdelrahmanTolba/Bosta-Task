@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
 import Logo from "./Logo";
+import { useTranslation } from "react-i18next";
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <div className="footer">
       <div className="footer__logo">
@@ -10,71 +13,68 @@ export default function Footer() {
 
       <div className="lists">
         <div className="item__list">
-          <h6 className="item__list--heading">Products</h6>
+          <h6 className="item__list--heading">{t("products")}</h6>
           <ul className="footer__items">
             <li className="footer__item">
-              <a href="">Solutions</a>
+              <a href="">{t("Solution")}</a>
             </li>
             <li className="footer__item">
-              <a href="">Dashboard</a>
+              <a href="">{t("dashboard")}</a>
             </li>
             <li className="footer__item">
-              <a href="">Mobile App</a>
+              <a href="">{t("MobileApp")}</a>
             </li>
           </ul>
         </div>
 
         <div className="item__list">
-          <h6 className="item__list--heading">Integrations</h6>
+          <h6 className="item__list--heading">{t("integrations")}</h6>
           <ul className="footer__items">
             <li className="footer__item">
-              <a href="">Shopify</a>
+              <a href="">{t("Shopify")}</a>
             </li>
             <li className="footer__item">
-              <a href="#WooCommerce">WooCommerce</a>
+              <a href="#WooCommerce">{t("WooCommerce")}</a>
             </li>
             <li className="footer__item">
-              <a href="#Custom APIs">Custom APIs</a>
+              <a href="#Custom APIs">{t("CustomAPIs")}</a>
             </li>
           </ul>
         </div>
 
         <div className="item__list">
-          <h6 className="item__list--heading">Businesses</h6>
+          <h6 className="item__list--heading">{t("useCases")}</h6>
           <ul className="footer__items">
             <li className="footer__item">
-              <a href="">Businesses</a>
+              <a href="">{t("SMEs")}</a>
             </li>
             <li className="footer__item">
-              <a href="">Use Cases</a>
+              <a href="">{t("businesses")}</a>
             </li>
           </ul>
         </div>
 
         <div className="item__list">
-          <h6 className="item__list--heading">Company</h6>
+          <h6 className="item__list--heading">{t(`footer.Company`)}</h6>
           <ul className="footer__items">
             <li className="footer__item">
-              <a href="">About us</a>
+              <a href="">{t(`footer.About_us`)}</a>
             </li>
             <li className="footer__item">
-              <a href="">Careers</a>
+              <a href="">{t(`footer.Careers`)}</a>
             </li>
             <li className="footer__item">
-              <a href="">Pricing</a>
+              <a href="">{t(`footer.Pricing`)}</a>
             </li>
             <li className="footer__item">
-              <a href="">FAQ</a>
-            </li>
-            <li className="footer__item">
-              <a href="">Help Center</a>
+              <a href="">{t(`footer.FAQ`)}</a>
             </li>
           </ul>
         </div>
       </div>
 
       <Link to={"/"} className="link__track">
-        Track Shipment
+        {t("footer.Track_Shipment")}
       </Link>
     </div>
   );

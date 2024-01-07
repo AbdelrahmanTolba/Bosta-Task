@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import { HiArrowUpRight } from "react-icons/hi2";
 
 export default function PartnerInfo() {
+  const { t } = useTranslation();
   return (
     <div className="partner__info">
-      <h2 className="partner__heading">Egypt’s #1 Shipping Partner For:</h2>
+      <h2 className="partner__heading">{t("partner.heading")}</h2>
       <div className="partner__businesses">
         <div className="partner__business">
           <svg
@@ -32,14 +34,14 @@ export default function PartnerInfo() {
               style={{ color: "#fff" }}
             />
           </svg>
-          <h4 className="partner__business--heading">Business</h4>
+          <h4 className="partner__business--heading">
+            {t("partner.Business__heading")}
+          </h4>
           <p className="partner__business--paragraph">
-            Bosta can equip your logistic operations with efficient tools and
-            innovative tech solutions — dashboard, plugins, and API
-            integrations.
+            {t("partner.Business__paragraph")}
           </p>
           <a className="bussniess__btn">
-            Start with Bosta <HiArrowUpRight />
+            {t("partner.btn")} <HiArrowUpRight />
           </a>
         </div>
         <div className="partner__business">
@@ -82,14 +84,13 @@ export default function PartnerInfo() {
             />
           </svg>
           <h4 className="partner__business--heading">
-            Small & Medium Business
+            {t("partner.Small__Business__heading")}
           </h4>
           <p className="partner__business--paragraph">
-            We ensure seamless delivery operations for your small or mid-sized
-            hustle with our super-smooth mobile app.
+            {t("partner.Small__Business__paragraph")}
           </p>
           <a className="bussniess__btn">
-            Start with Bosta <HiArrowUpRight />
+            {t("partner.btn")} <HiArrowUpRight />
           </a>
         </div>
       </div>

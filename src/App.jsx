@@ -4,6 +4,7 @@ import Error from "./components/Error";
 import Home from "./pages/Home";
 import TrackingShipment from "./pages/TrackingShipment";
 import { useTranslation } from "react-i18next";
+import { Suspense } from "react";
 function App() {
   const { i18n } = useTranslation();
 
@@ -23,4 +24,10 @@ function App() {
   );
 }
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <Suspense fallback="...loading">
+      <App />
+    </Suspense>
+  );
+}

@@ -2,7 +2,9 @@ import "../styles/partner.css";
 import PartnerInfo from "./PartnerInfo";
 import partnerTracks from "../assets/partnersTracks.png";
 import PartnerCompanies from "./PartnerCompanies";
+import { useTranslation } from "react-i18next";
 export default function Partner() {
+  const { t } = useTranslation();
   return (
     <section className="partner">
       <div className="partner__bg">
@@ -25,8 +27,8 @@ export default function Partner() {
       <div className="partner__tracks">
         <img src={partnerTracks} alt="" />
       </div>
-      <h2 className="trusted__heading">Sign Up & Start Shipping Today</h2>
-      <button className="partner__btn">Start Shipping</button>
+      <h2 className="trusted__heading">{t("partner.Sign__heading")}</h2>
+      <button className="partner__btn">{t("partner.Sign__btn")}</button>
     </section>
   );
 }

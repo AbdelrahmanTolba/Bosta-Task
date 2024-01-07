@@ -61,6 +61,15 @@ button {
 *:disabled {
   cursor: not-allowed;
 }
+.section__heading {
+  font-family: "Poppins/Medium";
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
 
 .text__green {
   color: #3ac435 !important;

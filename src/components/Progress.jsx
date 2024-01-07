@@ -1,13 +1,16 @@
 import { HiCheck } from "react-icons/hi";
 import { ORDER_STATUSES_TO_COLORS } from "../constants/orderStatus";
+import { useTranslation } from "react-i18next";
+import { titleizeKeys } from "../utils/titleizeObjKeys";
 
 // eslint-disable-next-line react/prop-types
 export default function Progress({ state }) {
+  const { t, i18n } = useTranslation();
   const labelArray = [
-    "تم انشاء الشحنة",
-    "تم استلام الشحنة من التاجر",
-    "الشحنة خرجت للتسليم",
-    "تم التسليم",
+    "Shipment_has_been_created",
+    "Shipment_has_been_received_from_the_merchant",
+    "Shipment_is_out_for_delivery",
+    "Shipment_Delivered",
   ];
   return (
     <div className="ShipmentSteper">
@@ -22,7 +25,7 @@ export default function Progress({ state }) {
                 className={`circleWrapper__after bg__${ORDER_STATUSES_TO_COLORS[state]}`}
               ></div>
             </div>
-            <p>{label}</p>
+            <p>{i18n.language === "en" ? titleizeKeys(t(label)) : t(label)}</p>
           </div>
         ))}
       </div>

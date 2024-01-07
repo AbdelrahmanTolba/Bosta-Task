@@ -201,6 +201,7 @@ nav {
 .btn-search {
   position: absolute;
   height: 100%;
+  width: 20%;
   inset-inline-end: 0;
   top: 0;
   background: var(--color-primary);
@@ -256,7 +257,7 @@ nav {
     display: none;
   }
   .shipment .shipment-body {
-    left: -100%;
+    inset-inline-start: -70%;
     justify-content: center;
     align-items: center;
 

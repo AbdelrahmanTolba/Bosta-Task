@@ -54,5 +54,10 @@
   "1 Saturday 2023": "1 السبت 2023",
 
   "Bosta": "بوسطة",
-  "SOUQ.COM": "سوق"
+  "SOUQ.COM": "سوق",
+
+  "Shipment_has_been_created": "تم انشاء الشحنة",
+  "Shipment_has_been_received_from_the_merchant": "تم استلام الشحنة من التاجر",
+  "Shipment_is_out_for_delivery": "الشحنة خرجت للتسليم",
+  "Shipment_Delivered": "تم التسليم"
 }

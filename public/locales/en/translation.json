@@ -54,7 +54,10 @@
   "Wednesday, March 29 2023, 4:07 pm": "Wednesday, March 29 2023, 4:07 pm",
   "Tuesday, April 4 2023, 3:52 pm": "Tuesday, April 4 2023, 3:52 pm",
   "1 Saturday 2023": "1 Saturday 2023",
-
   "Bosta": "Bosta",
-  "SOUQ.COM": "SOUQ.COM"
+  "SOUQ.COM": "SOUQ.COM",
+  "Shipment_has_been_created": "Shipment_has_been_created",
+  "Shipment_has_been_received_from_the_merchant": "Shipment_has_been_received_from_the_merchant",
+  "Shipment_is_out_for_delivery": "Shipment_is_out_for_delivery",
+  "Shipment_Delivered": "Shipment_Delivered"
 }

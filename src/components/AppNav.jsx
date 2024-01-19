@@ -3,20 +3,15 @@ import { HiChevronDown } from "react-icons/hi";
 import Menu from "./Menu";
 import { useState } from "react";
 import Logo from "./Logo";
-import SearchTrack from "./SearchTrack";
+import SearchTrack from "../features/trackShipment/SearchTrack";
 import { useTranslation } from "react-i18next";
 
 // eslint-disable-next-line react/prop-types
 function AppNav({ page = "home" }) {
   const { t, i18n } = useTranslation();
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState(i18n.language);
-
-  function handleModalClick(e) {
-    e.preventDefault();
-    setIsOpen((open) => !open);
-  }
 
   function handleSelectChange(e) {
     i18n.changeLanguage(e.target.value);
@@ -119,7 +114,10 @@ function AppNav({ page = "home" }) {
       {/* Mobile */}
       <div className="mobile-right-side">
         <div className="shipment">
-          <div className="shipment-header option" onClick={handleModalClick}>
+          <div
+            className="shipment-header option"
+            onClick={() => setIsOpen((open) => !open)}
+          >
             <a className="nav__link">{t("trackShipment.header")}</a>
             <HiChevronDown size={20} className="arrow" />
           </div>

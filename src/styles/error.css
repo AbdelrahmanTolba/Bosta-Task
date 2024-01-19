@@ -11,6 +11,11 @@
   font-size: 3rem;
   margin-bottom: 2rem;
 }
+.error p {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: var(--color-gray);
+}
 
 .error button {
   border-radius: 3rem;

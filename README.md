@@ -1,6 +1,6 @@
 # Bosta-Task 🚚 ([Live Server](https://bosta-task-gold.vercel.app/))
 
-> Bosta Assessment for their website tracking service, Bulding a fully resposive website and handling Api.
+> Bosta Assessment for their website tracking service, Bulding a fully resposive website and handling Api using RTK query.
 
 <p align="center">
   <img src="https://github.com/AbdelrahmanTolba/Bosta-Task/assets/90225424/e997107a-bd0a-400e-b964-2d7b83ca74c2" alt="Bosta Logo">
@@ -11,7 +11,7 @@
 - [React](https://react.dev)
 - [React Router Dom](https://reactrouter.com/en/main)
 - [react-icons](https://react-icons.github.io/react-icons/)
-- [momentjs](https://momentjs.com/)
+- [RTK](https://redux-toolkit.js.org/rtk-query/overview)
 - [[i18next]](https://react.i18next.com/)
 - [[hamburger-react]](https://www.npmjs.com/package/hamburger-react)
 - [Vite](https://vitejs.dev)

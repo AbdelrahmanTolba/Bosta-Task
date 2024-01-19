@@ -1,6 +1,6 @@
-import "../styles/partner.css";
+import "../../styles/partner.css";
 import PartnerInfo from "./PartnerInfo";
-import partnerTracks from "../assets/partnersTracks.png";
+import partnerTracks from "../../assets/partnersTracks.png";
 import PartnerCompanies from "./PartnerCompanies";
 import { useTranslation } from "react-i18next";
 export default function Partner() {

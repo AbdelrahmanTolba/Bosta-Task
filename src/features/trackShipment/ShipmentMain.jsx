@@ -1,11 +1,27 @@
 /* eslint-disable react/prop-types */
 import { useTranslation } from "react-i18next";
-import problemImg from "../assets/problem.png";
-import { titleizeKeys } from "../utils/titleizeObjKeys";
-import moment from "moment";
+import problemImg from "../../assets/problem.png";
+import { titleizeKeys } from "../../utils/titleizeObjKeys";
 
 export default function ShipmentMain({ TransitEvents }) {
   const { t, i18n } = useTranslation();
+
+  const shipmentDate = (date) => {
+    return new Intl.DateTimeFormat(i18n.language, {
+      day: "numeric",
+      month: "2-digit",
+      year: "numeric",
+      timeZone: "UTC",
+    }).format(new Date(date));
+  };
+  const shipmentTime = (date) => {
+    return new Intl.DateTimeFormat(i18n.language, {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+      timeZone: "UTC",
+    }).format(new Date(date));
+  };
   return (
     <div className="shipment__mains">
       <div className="shipment__main shipment__details">
@@ -23,8 +39,8 @@ export default function ShipmentMain({ TransitEvents }) {
             {TransitEvents?.map(({ hub, state, timestamp }) => (
               <tr key={timestamp}>
                 <td>{hub || "--"}</td>
-                <td>{moment(timestamp).format("D/MM/YYYY")}</td>
-                <td>{moment(timestamp).format("h:mm A")}</td>
+                <td>{shipmentDate(timestamp)}</td>
+                <td>{shipmentTime(timestamp)}</td>
                 <td>
                   {i18n === "en" ? titleizeKeys(t(`${state}`)) : t(`${state}`)}
                 </td>

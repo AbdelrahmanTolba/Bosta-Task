@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import man from "../assets/man.png";
-import "../styles/Header.css";
+import man from "../../assets/man.png";
+import "../../styles/Header.css";
 import Polygon from "./Polygon";
 
 function Header() {

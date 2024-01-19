@@ -1,7 +1,7 @@
 import { HiCheck } from "react-icons/hi";
-import { ORDER_STATUSES_TO_COLORS } from "../constants/orderStatus";
+import { ORDER_STATUSES_TO_COLORS } from "../../constants/orderStatus";
 import { useTranslation } from "react-i18next";
-import { titleizeKeys } from "../utils/titleizeObjKeys";
+import { titleizeKeys } from "../../utils/titleizeObjKeys";
 
 // eslint-disable-next-line react/prop-types
 export default function Progress({ state }) {

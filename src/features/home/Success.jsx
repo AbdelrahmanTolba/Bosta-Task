@@ -1,7 +1,7 @@
-import "../styles/success.css";
+import "../../styles/success.css";
 import { HiArrowUpRight } from "react-icons/hi2";
 
-import woman from "../assets/woman.png";
+import woman from "../../assets/woman.png";
 import BluePath from "./BluePath";
 import { useTranslation } from "react-i18next";
 export default function Success() {

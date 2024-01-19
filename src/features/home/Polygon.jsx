@@ -1,5 +1,5 @@
-import track from "../assets/track.gif";
-import "../styles/Polygon.css";
+import track from "../../assets/track.gif";
+import "../../styles/Polygon.css";
 
 function Polygon() {
   return (

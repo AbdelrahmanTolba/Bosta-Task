@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
-import { ORDER_STATUSES_TO_COLORS } from "../constants/orderStatus";
-import { titleizeKeys } from "../utils/titleizeObjKeys";
-import ShipmentMain from "../components/ShipmentMain";
+import { ORDER_STATUSES_TO_COLORS } from "../../constants/orderStatus";
+import { titleizeKeys } from "../../utils/titleizeObjKeys";
+import ShipmentMain from "./ShipmentMain";
 
 import Progress from "./Progress";
-import moment from "moment";
 import { useTranslation } from "react-i18next";
 
 export default function ShipmentInfo({ trackingData }) {
@@ -18,6 +17,26 @@ export default function ShipmentInfo({ trackingData }) {
   } = trackingData;
 
   const { state, timestamp } = CurrentStatus;
+  const lastUpdateDate = (date) => {
+    return new Intl.DateTimeFormat(i18n.language, {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      timeZone: "UTC",
+    }).format(new Date(date));
+  };
+
+  const deliveryTime = (date) => {
+    return new Intl.DateTimeFormat(i18n.language, {
+      day: "numeric",
+      weekday: "long",
+      year: "numeric",
+      timeZone: "UTC",
+    }).format(new Date(date));
+  };
   return (
     <>
       <div className="shipment__container">
@@ -36,10 +55,7 @@ export default function ShipmentInfo({ trackingData }) {
           </div>
           <div className="shipment__info">
             <h5>{t("Last_updated")}</h5>
-            <h3>
-              {t(moment(timestamp).format("dddd, MMMM D YYYY, h:mm a")) ||
-                moment(timestamp).format("dddd, MMMM D YYYY, h:mm a")}
-            </h3>
+            <h3>{lastUpdateDate(timestamp)}</h3>
           </div>
           <div className="shipment__info">
             <h5>{t("Merchant_name")}</h5>
@@ -49,10 +65,7 @@ export default function ShipmentInfo({ trackingData }) {
           {PromisedDate && (
             <div className="shipment__info">
               <h5>{t("Delivery_time_within")}</h5>
-              <h3>
-                {t(moment(PromisedDate).format("D dddd YYYY")) ||
-                  moment(PromisedDate).format("D dddd YYYY")}
-              </h3>
+              <h3>{deliveryTime(timestamp)}</h3>
             </div>
           )}
         </div>

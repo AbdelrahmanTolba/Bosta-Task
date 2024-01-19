@@ -61,4 +61,4 @@ npm run dev
 
 - Search for shipment track by shipment number (tracking number to be used: 7234258, 13737343, 67151313 ).
 - Create Home page for bosta.
-- Shipment page support two languages (Arabic, English).
+- Support two languages (Arabic, English).

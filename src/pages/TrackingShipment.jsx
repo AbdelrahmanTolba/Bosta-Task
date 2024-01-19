@@ -1,36 +1,21 @@
 import "../styles/trackShipment.css";
 
-import { useEffect, useState } from "react";
-import { fetchTrackingData } from "../api/apiTrackShipment";
-import { useParams } from "react-router-dom";
+import { useGetOrderQuery } from "../api/apiSlice";
 
 import Error from "../components/Error";
 import AppNav from "../components/AppNav";
-import ShipmentInfo from "../components/ShipmentInfo";
+import ShipmentInfo from "../features/trackShipment/ShipmentInfo";
 import Loading from "../components/Loading";
 
-function TrackingShipment() {
-  const [trackingData, setTrackingData] = useState(null);
-  const { trackId } = useParams();
-  const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+import { useParams } from "react-router-dom";
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setIsLoading(true);
-        const data = await fetchTrackingData(trackId);
-        setTrackingData(data);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    fetchData();
-  }, [trackId]);
+function TrackingShipment() {
+  const { trackId } = useParams();
+
+  const { data: trackingData, error, isLoading } = useGetOrderQuery(trackId);
+
   if (isLoading) return <Loading />;
-  if (error) return <Error />;
+  if (error) return <Error error={error} />;
 
   return (
     trackingData && (
